@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgb(5, 5, 23);
+  height: 100vh;
+  width: 100%;
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+main {
+  width: 90%;
+  height: 80%;
+  outline: 5px solid rgb(207, 92, 54);
+  border-radius: 10px;
+  background-color: rgb(239, 200, 139);
+  overflow-y: scroll;
+}
+h1 {
+  margin: 2rem;
+  color: rgb(207, 92, 54);
+  font-size: 3rem;
+  font-weight: 700;
+}
+details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+summary {
+  color: rgb(207, 92, 54);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  background: rgb(244, 227, 178);
+  width: 95%;
+  border-radius: 10px;
+  list-style: none;
+  margin: 1rem;
+}
+details span {
+  color: rgb(5, 5, 23);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem;
+  background-color: rgb(211, 213, 215);
+  border-radius: 10px;
+  width: 90%;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.inBox {
+  width: 95%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1rem;
+  align-self: center;
+}
+::-webkit-scrollbar {
+  border-top-right-radius: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  details span {
+    width: max-content;
+    text-align: center;
+  }
+  .inBox {
+    width: 20rem;
+    height: 20rem;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
